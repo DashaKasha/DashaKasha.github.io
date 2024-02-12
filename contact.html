@@ -34,8 +34,8 @@
         </section>
 
         <section>
-            <p>Просьба так же пройти несколько опросов для моей следующего студенческого исследования! <br>
-            О нем я, конечно же, расскажу позже на этом сайте!</p>
+            <p><strong>Ограмная</strong> просьба так же пройти несколько опросов для моей следующего <u>студенческого исследования!</u> <br>
+            О нем я, <i>конечно же</i>, расскажу позже на этом сайте!</p>
 
             <label for="chkAccepted">Вы даете согласие на сбор данных?</label>
             <input type="checkbox" name="chkAccepted"><br>
@@ -43,14 +43,18 @@
             <label for="date">Введите свою дату рождения:</label>
             <input type="date" name="date"><br>
 
-            <label for="animal">Выберите свое любимое животное:</label>
-            <optgroup label="letters" name="animal">
-              <option>Собаки</option>
-              <option>Коты</option>
-              <option>Попугаи</option>
-              <option>Другое</option>
-            </optgroup><br>
-
+            <label for="animal">Выберите свое любимое животное:</label><br>
+            
+            <label for="optA">Собаки</label>
+            <input name="option" id="optA"  type="radio" value="1"><br>
+            <label for="optB">Кошки</label>
+            <input name="option" id="optB"  type="radio" value="2"><br>
+            <label for="optC">Попугаи</label>
+            <input name="option" id="optC" type="radio" value="3"><br>
+            <label for="optD">Другое</label>
+            <input name="option" id="optD" type="radio" value="4"><br>
+            
+            <input type="reset"><br>
             <button>Отправить результаты</button>
 
             <p><a href="#header">Вернуться в начало страницы</a></p>
