@@ -38,13 +38,18 @@
             О нем я, конечно же, расскажу позже на этом сайте!</p>
 
             <label for="chkAccepted">Вы даете согласие на сбор данных?</label>
-            <p>Введите свою дату рождения:</p>
+            <input type="checkbox" name="chkAccepted"><br>
+            
+            <label for="date">Введите свою дату рождения:</label>
             <input type="date" name="date"><br>
-            <optgroup label="letters" title="Выберите свое любимое животное:">
+
+            <label for="animal">Выберите свое любимое животное:</label>
+            <optgroup label="letters" name="animal">
               <option>Собаки</option>
               <option>Коты</option>
               <option>Попугаи</option>
-            </optgroup>
+              <option>Другое</option>
+            </optgroup><br>
 
             <button>Отправить результаты</button>
 
