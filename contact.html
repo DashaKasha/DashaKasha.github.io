@@ -29,6 +29,8 @@
                 <p>Ваше имя: <input type="text" name="Name"/></p>
                 <p>Адрес вашей электронной почты: <input type="text" name="Email"/></p>
                 <p>Отзыв: <input type="text" name="Feedback"/></p>
+                <input type="reset"><br><br>
+                <button>Отправить результаты</button>
               </fieldset>
             </form>
         </section>
@@ -36,26 +38,30 @@
         <section>
             <p><strong>Ограмная</strong> просьба так же пройти несколько опросов для моей следующего <u>студенческого исследования!</u> <br>
             О нем я, <i>конечно же</i>, расскажу позже на этом сайте!</p>
+            
+            <form action="formprocesseor.html" method="get" style="background-color: #dedede">
+              <fieldset>
+                <label for="chkAccepted">Вы даете согласие на сбор данных?</label>
+                <input type="checkbox" name="chkAccepted"><br><br>
 
-            <label for="chkAccepted">Вы даете согласие на сбор данных?</label>
-            <input type="checkbox" name="chkAccepted"><br><br>
-            
-            <label for="date">Введите свою дату рождения:</label>
-            <input type="date" name="date"><br><br>
+                <label for="date">Введите свою дату рождения:</label>
+                <input type="date" name="date"><br><br>
 
-            <label for="animal">Выберите свое любимое животное:</label><br>
-            
-            <label for="optA">Собаки</label>
-            <input name="option" id="optA"  type="radio" value="1"><br>
-            <label for="optB">Кошки</label>
-            <input name="option" id="optB"  type="radio" value="2"><br>
-            <label for="optC">Попугаи</label>
-            <input name="option" id="optC" type="radio" value="3"><br>
-            <label for="optD">Другое</label>
-            <input name="option" id="optD" type="radio" value="4"><br><br><br>
-            
-            <input type="reset"><br><br><br>
-            <button>Отправить результаты</button>
+                <label for="animal">Выберите свое любимое животное:</label><br>
+
+                <label for="optA">Собаки</label>
+                <input name="option" id="optA"  type="radio" value="1"><br>
+                <label for="optB">Кошки</label>
+                <input name="option" id="optB"  type="radio" value="2"><br>
+                <label for="optC">Попугаи</label>
+                <input name="option" id="optC" type="radio" value="3"><br>
+                <label for="optD">Другое</label>
+                <input name="option" id="optD" type="radio" value="4"><br><br>
+
+                <input type="reset"><br><br>
+                <button>Отправить результаты</button>
+              </fieldset>
+          </form>
 
             <p><a href="#header">Вернуться в начало страницы</a></p>
             
