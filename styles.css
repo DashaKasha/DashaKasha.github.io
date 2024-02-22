@@ -1,7 +1,15 @@
+@media screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 body, html {
     margin: 0; 
     padding: 0;
+    font-family: Arial, sans-serif;
 }
+
 
 header, nav {
   background-color: #E4D9FF;
@@ -32,15 +40,57 @@ header, nav {
     margin-right: 35px; 
     text-color:#fff;
     font-weight:bold;
+    font-size:13px;
+    background-color: transparent !important;
 }
 
-#s::first-letter{
-  color:blue;
+a:not([href^="http"]) {
+  color: #A675A1;
 }
+
+.container {
+  display: flex;
+}
+
+.container::before {
+  content: "Мои любимые предметы: ";
+  font-size: 16px;
+  font-weight:bold;
+  
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 5px;
+}
+
+li:nth-child(even) {
+  background-color: lightgray;
+}
+
+button:hover {
+  background-color: red;
+}
+
+p.highlight {
+  color: blue;
+}
+
+
 
 footer {
   background-color: #273469;
-  color: #FAFAFF;
+  color: white;
   margin: 0; 
   padding: 0;
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  
 }
