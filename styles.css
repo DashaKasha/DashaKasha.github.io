@@ -75,7 +75,7 @@ li:nth-child(even) {
 }
 
 button:hover {
-  background-color: lightblue;
+  background-color: lightpink;
 }
 
 p.highlight {
